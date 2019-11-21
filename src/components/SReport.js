@@ -96,7 +96,7 @@ function SReport(props) {
 
   const initGrid = () => {
     if (props.sudoku.isSolved()) return;
-    const grid = GRIDS[1];
+    const grid = GRIDS[0];
     setTimeout(() => {
       grid.forEach(item => {
         setTimeout(() => {
