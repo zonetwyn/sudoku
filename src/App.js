@@ -55,7 +55,7 @@ class App extends Component {
   }
 
   render() {
-    const { sudoku, cells } = this.state;
+    const { sudoku } = this.state;
 
     return (
       <div className="App f-h">
