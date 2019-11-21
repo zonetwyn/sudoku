@@ -1,13 +1,34 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i&display=swap');
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Open Sans', sans-serif !important;
+  height: 100vh;
+  background: #f8f8f8 !important;
+  color: #333 !important;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+#root {
+  height: 100%;
+}
+
+code, h1, h2, h3, h4, h5, .ui.menu, .ui.button {
+  font-family: 'Open Sans', sans-serif !important;
+}
+
+/* Utility Classes */
+.f-h {
+  height: 100%;
+}
+
+.f-w {
+  width: 100%;
+}
+
+.ui.button, .ui.form {
+  font-size: 15px !important;
+}
+
+.ui.button.basic.selected {
+  background: #333 !important;
+  color: #ffff !important;
 }

@@ -1,22 +1,132 @@
-.App {
+/* App */
+.App>header {
+  padding: 2rem;
   text-align: center;
+  background: #fff;
+  border-bottom: 1px dashed #cecece;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
+.App>header .ui.header {
+  font-size: 2.5em;
+  color: rgb(59, 59, 59) !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.App>header .ui.header .logo {
+  color: #21ba45;
 }
 
-.App-link {
-  color: #09d3ac;
+/* Main */
+.Main {
+  margin-top: 2rem;
+}
+
+/* Sudoku */
+.Sudoku .ui.grid {
+  width: 80%;
+  margin: 0 auto;
+  background: #fff;
+}
+
+.Sudoku .column {
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: 0 !important;
+}
+
+.Sudoku .column .ui.button {
+  width: 100% !important;
+  padding-top: 100%;
+  position: relative;
+  padding-left: 0 !important;
+  padding-bottom: 0 !important;
+  padding-right: 0 !important;
+  margin-bottom: 0 !important;
+  border-radius: 0 !important;
+}
+
+.Sudoku .column .ui.button label {
+  position: absolute;
+  top: 40%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.Sudoku .ui.grid .ui.button {
+  border: .1px solid #d8d9da !important;
+}
+
+/* SModal */
+.SModal .ui.header {
+  font-size: 1.7em;
+}
+
+.SModal .ui.dropdown .menu>.item {
+  font-size: 16px !important;
+}
+
+.SModal.ui.modal>.content p {
+  font-size: 15px;
+  color: #db2828;
+} 
+
+/* SReport */
+.SReport {
+  width: 100%;
+  background: #fff;
+  border: 1px dashed #cecece;
+}
+
+.SReport>.ui.grid {
+  padding: 2rem;
+}
+
+.SReport>.ui.divider {
+  margin: 0 !important;
+}
+
+.SReport .ui.message {
+  margin: 2rem 2rem 0 2rem !important;
+  font-size: 15px !important;
+}
+
+.SReport .Steps {
+  padding: 0 2rem 2rem 2rem;
+}
+
+.SReport .Steps h4.ui.header {
+  font-size: 18px;
+  color: #21ba45;
+}
+
+.SReport .Steps .ui.list {
+  font-size: 15px;
+  max-height: 370px;
+  overflow-y: auto;
+}
+
+.SReport .Steps .ui.list .item {
+  border: 1px dashed rgb(218, 214, 214);
+  padding: 1rem;
+}
+
+.SReport .Steps .ui.list .item p {
+  margin-bottom: .25em;
+}
+
+.SReport .Steps .ui.list .item label {
+  color: #777;
+  font-weight: 600;
+}
+
+/* Tips */
+.Tips {
+  margin-top: 2rem;
+}
+
+.Tips .ui.info.message {
+  font-size: 15px;
 }
